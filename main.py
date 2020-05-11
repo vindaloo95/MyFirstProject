@@ -4,13 +4,9 @@
 # alsjaklsdjf
 # hello this is a test
 
-print('''Hello World
-sjdflkj
-
-lasjdklfjds
-
-kasd;fjasdf
-
+print('''
+sfasasdf
+alsjaklsdjf
 
 
 This is a new line''')
