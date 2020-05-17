@@ -1,0 +1,63 @@
+Keywords in Python
+Variables 
+a-z A-Z 0-9 _
+Static Vs Dynamic
+
+Datatypes
+int
+float
+bool
+str
+
+
+tuple
+list
+set
+
+type()
+id()
+
+Mutable Vs Immutable
+
+Escape sequence
+\
+\'
+\"
+\\
+\n
+
+and
+as
+assert
+async
+await
+break
+class
+continue
+def
+del
+elif
+else
+except
+False
+finally
+for
+from
+global
+if
+import
+in
+is
+lambda
+None
+nonlocal
+not
+or
+pass
+raise
+return
+True
+try
+while
+with
+yield

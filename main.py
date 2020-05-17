@@ -1,16 +1,11 @@
 
-# This is a comment
-# a;skldjfklajsdf
-# alsjaklsdjf
-# hello this is a test
+firstString = "der Fluß"
+firstString = "தமிழ்"
+secondString = "der FlussFlur tuFlu"
 
-print('''
-sfasasdf
-alsjaklsdjf
+print(secondString.find("Fla"))
+new_string = secondString.center(30,'-')
+
+print(new_string)
 
 
-This is a new line''')
-print (20 * 56)
-print("45 * 45 = " + '54')
-print('67 + 876 = ' + str(67 + 876))
-print('I am in 6th grade')
