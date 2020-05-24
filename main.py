@@ -1,11 +1,14 @@
+def getFibonnaciSeries(num):
+  c1, c2 = 0, 1
+  count = 0
+  while count < num:
+    yield c1
+    c3 = c1 + c2
+    c1 = c2
+    c2 = c3
+    count += 1
 
-firstString = "der Fluß"
-firstString = "தமிழ்"
-secondString = "der FlussFlur tuFlu"
-
-print(secondString.find("Fla"))
-new_string = secondString.center(30,'-')
-
-print(new_string)
-
-
+fin = getFibonnaciSeries(5)
+print(fin)
+for i in fin:
+  print(i)
