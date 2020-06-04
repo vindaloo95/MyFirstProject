@@ -51,3 +51,44 @@ for i in fin:
 
 ###########
 
+my_str = '''Hello World, this is a big line of multiple hello world in this
+world hello Hello World
+World world wor hello Hello
+'''
+
+print(my_str)
+print(my_str[3:50])
+
+max_count = int(input("How many Fibonacci numbers do you want? "))
+count = 3
+previous_num = 0
+current_num = 1
+if max_count > 0:
+  print(previous_num)
+if max_count > 1:
+  print(current_num)
+while count <= max_count:
+  tmp = current_num + previous_num
+  previous_num = current_num
+  current_num = tmp
+  print(current_num)
+  count += 1
+print('Program exited')
+
+
+'''
+Splits a number into Units Tens and Hundreds
+'''
+number = int(input('Enter a number: '))
+run_time = len(str(number))
+curr_number = number
+output = ''
+tmp = 5
+for i in range(run_time-1, -1, -1):
+  tmp =  curr_number // (10 ** i) * (10 ** i)
+  if tmp == 0:
+    continue
+  output += str(tmp) + ' + '
+  curr_number = curr_number % (10 ** i)
+output = output[:-3]
+print(f'{number} = {output}')
