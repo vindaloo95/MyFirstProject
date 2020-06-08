@@ -1,48 +1,25 @@
+countries = ['India', 'USA', 'Canada', 'Australia', 'South Africa', 'India','Australia','USA']
+temperatures =[100,200,60,30,230,23,84,34,23]
 
+countries_set = set(countries)
+countries_list = list(countries_set)
+countries_list.sort()
+print(countries)
+print(countries_list)
 
+5
+names = ['a','b','c']
+maths =[10,20,30]
+physics = [80, 80, 56.3]
+chemistry =[60,20,30]
 
+The top scorer in Math , physics and chemistry
+The lowest scorer in Math , physics and chemistry
+The top scorer by taking the average
+The lowert scorer by taking the average
 
+154
+154 = 100 + 50 + 4
 
-'''
-Pascal's Triangle
-
-0 - quit 
-Ask for input...and tell if that number is a prime number or not
-
-Ask for max_count. N
-Show the first N prime numbers:
-'''
-
-
-
-
-'''
-Print whether a number is Even or Odd
-
-Print whether a number is divisible by 5
-
-Factorial of n
-Factorial (5). 5 * 4 * 3 * 2 * 1 = 120
-Factorial (3). 3 * 2 * 1 = 6
-
-on. or On. or oN. or ON
-
-Fan turned on
-
-on
-Fan already on
-
-off or Off or oFF or oFf
-
-Fan turned off
-
-off
-Fan already off
-
-
-quit Quit
-Exit the program:
-'''
-
-
-
+76009
+76009 = 70000 + 6000 + 9

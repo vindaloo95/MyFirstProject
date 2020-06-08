@@ -92,3 +92,30 @@ for i in range(run_time-1, -1, -1):
   curr_number = curr_number % (10 ** i)
 output = output[:-3]
 print(f'{number} = {output}')
+
+'''Alternative method '''
+number = input('Enter a number: ')
+l = list(number)[::-1]
+output = ''
+for i in range(len(l)-1, -1, -1):
+  tmp = str(int(l.pop()) * 10 ** i)
+  if tmp != '0':
+    output += tmp + " + "
+output = output[:-3]
+print(f'{number} = {output}')
+'''
+Prime or not
+'''
+number = 13
+is_prime = False
+for i in range(2, number):
+  print(i, number % i)
+  if number % i == 0:
+    break
+else:
+  is_prime = True
+if is_prime:
+  print(f'The number {number} is Prime')
+else:
+  print(f'The number {number} is NOT Prime')
+
