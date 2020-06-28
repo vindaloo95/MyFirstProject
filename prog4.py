@@ -288,3 +288,127 @@ if is_prime:
 else:
   print(f'The number {number} is NOT Prime')
 
+def greeting(name):
+    print(f'Hello welcome to Python class Mr.{name}')
+
+
+def calculate(list1):
+    """This is addition"""
+    sum = 0
+    for i in list1:
+        sum += i
+    return sum
+
+
+def multiplication(l1):
+    multiplication = 1
+    count = 0
+    for i in l1:
+        if i != 0:
+            count += 1
+            multiplication *= i
+    if count == 0:
+        return 0
+    else:
+        return multiplication
+
+
+def count_even_and_odd_numbers(my_list):
+    even_count = 0
+    odd_count = 0
+    for i in my_list:
+        if i % 2 == 0:
+            even_count += 1
+        else:
+            odd_count += 1
+    return odd_count, even_count
+
+
+
+
+# list1 = [1, 2, 5, 3, 6, 0, 7, 0, 0, 5, 0, 4]
+list1 = [1,3,5,15,9,10,21,25,30,45]
+
+list2 = [2, 2, 0]
+list3 = [4, 6, 8, 3, 14, 18, 12, 6]
+
+
+def count_mul3_mul5(list1):
+    mul3 = 0
+    mul5 = 0
+    for i in list1:
+        if i == 0:
+            continue
+        if i % 3 == 0:
+            mul3 += 1
+        elif i % 5 == 0:
+            mul5 += 1
+    return mul3,mul5
+
+
+mul3, mul5 = count_mul3_mul5(list1)
+print(list1)
+print(f'Mul 3 count: {mul3}, Mul 5 count: {mul5}')
+
+mul3, mul5 = count_mul3_mul5(list2)
+print(list2)
+print(f'Mul 3 count: {mul3}, Mul 5 count: {mul5}')
+
+mul3, mul5 = count_mul3_mul5(list3)
+print(list3)
+print(f'Mul 3 count: {mul3}, Mul 5 count: {mul5}')
+
+'''
+Have a list of numbers:  Return the difference between the highest and lowest value in that list
+
+Add all the numbers in the array....if there is a number 9, you need to ignore that number and the following number:
+
+[1, 5, 9, 2, 3, 4, 9, 2, 1] = 14
+
+Give you a list... add all the numbers, but if see 10...ignore that number and the next 5 numbers. give the sum as a return value
+
+[5,10,15,2,3,4,6,6,7,10,11]
+5 + 6 + 7 = 18
+'''
+
+
+def diff_high_low(my_list):
+    my_list.sort()
+    return my_list[-1] - my_list[0]
+
+
+l1 = [15,43,12,21,45,23,98,46,87,38]
+print(diff_high_low(l1))
+
+def ignore9(my_list):
+    sum = 0
+    skip = False
+    for i in my_list:
+        if i == 9:
+            skip = True
+        elif skip:
+            skip = False
+        else:
+            sum += i
+    return sum
+l1 = [1, 9, 9, 3, 3, 4, 9, 2, 1]
+print(ignore9(l1))
+
+
+def ignore10_and_next5(my_list):
+    sum = 0
+    skip = False
+    count = 0
+    for i in my_list:
+        if i == 10:
+            skip = True
+            count = 0
+        elif skip:
+            count += 1
+            if count == 5:
+                skip = False
+        else:
+            sum += i
+    return sum
+l1 = [5,10,15,2,3,4,6,6,7,10,11]
+print(ignore10_and_next5(l1))
